@@ -1,0 +1,134 @@
+form {
+    box-shadow: 0px 0px 53px black;
+    border-radius: 20px;
+    padding: 11px 60px;
+    margin: 10px 25px;
+    position: relative;
+}
+
+form::before {
+    content: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/Football_%28soccer_ball%29.svg');
+    position: absolute;
+    transform: translate(-121%, -66%);
+    overflow: hidden;
+}
+
+
+label, p, select option {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+input[type=text],
+input[type=password],
+input[type=email], 
+input[type=number], 
+input[type=tel],
+input[type=date],
+input[type=url],
+textarea,
+select {
+    border-radius: 5px;
+    width: 100%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0px 0px 5px black;
+    background-color: whitesmoke;
+}
+
+
+.wrapper-city-country {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.firstName, .lastName {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-city, .wrapper-country {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 50px;
+    flex-basis: 50%;
+    margin: 0;
+}
+
+.wrapper-country {
+    margin-right: 20px;
+}
+
+
+
+
+.names, .adrress, .physical-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0px;  
+    align-items: center;
+}
+
+
+.image {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#height, #weight, #pulse {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.email, .phone {
+    display: flex;
+    flex-direction: column;
+}
+
+.terms, .allergies {
+    margin: 40px 0;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    flex-basis: 50%;
+    margin: 40px 0;
+}
+
+.submit-btn {
+    padding: 15px 130px;
+    margin: 20px 10px;
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px black;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+.allergies-text, .other-sports-text, .url-image {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.alert {
+    text-align: center;
+    background-color: red;
+    padding: 7px;
+    border-radius: 15px;
+    margin: 0 40px;
+}
